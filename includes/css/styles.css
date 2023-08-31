@@ -1,0 +1,102 @@
+/* General Resets and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body and global styles */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Header styles */
+header {
+    background-color: #343a40;
+    padding: 10px 0;
+    color: #fff;
+}
+
+header .nav_logo {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #495057;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content .social-links a {
+    margin: 0 10px;
+    color: #fff;
+}
+
+/* Responsive styles (for screens below 768px) */
+@media only screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+}
